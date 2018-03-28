@@ -3,6 +3,7 @@ import Head from 'next/head'
 import styled, { injectGlobal } from 'styled-components'
 import reset from 'styled-reset'
 import Header from '../components/Header'
+import Footer from './Footer';
 
 const baseStyles = () => injectGlobal`
   ${reset}
@@ -33,6 +34,7 @@ export default ({
       <Main>
         {children}
       </Main>
+      <Footer />
     </React.Fragment>
   )
 }
